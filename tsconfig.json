@@ -1,13 +1,13 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
+        "module": "ESNext",
         "strict": true,
-        "target": "es5",
+        "target": "ESNext",
         "lib": ["esnext"],
         "declaration": true,
         "declarationDir": "./types",
         "outDir": "./"
     },
-    "include": ["src/*.ts"],
+    "include": ["src/*"],
     "exclude": ["node_modules"]
 }

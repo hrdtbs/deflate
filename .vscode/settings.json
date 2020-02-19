@@ -7,6 +7,8 @@
     "eslint.codeAction.showDocumentation": {
         "enable": true
     },
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.codeActionsOnSaveTimeout": 2000,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     }

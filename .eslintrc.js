@@ -1,13 +1,12 @@
+/** @type {import('eslint').CLIEngine.Options} */
 module.exports = {
     parser: "@typescript-eslint/parser",
     parserOptions: {
         ecmaVersion: 9,
-        project: "./tsconfig.json",
         sourceType: "module"
     },
     env: {
-        es6: true,
-        browser: true
+        es6: true
     },
     extends: [
         "eslint:recommended",
@@ -34,6 +33,11 @@ module.exports = {
     overrides: [
         {
             files: ["**/*.ts", "**/*.tsx"],
+            parser: "@typescript-eslint/parser",
+            parserOptions: {
+                project: "./tsconfig.json",
+                createDefaultProgram: true
+            },
             rules: {
                 "no-undef": "off",
                 // typescript
